@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Тестики.Ком</title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        background-color: rgb(203, 116, 145);
+        font-family: Arial, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 20px;
+  }
+
+  .container {
+    width: 320px;
+    height: 320px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+  }
+
+.header {
+    text-align: center;
+    padding: 12px 0;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+  h2 {
+    color: #2c1c19;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .input-box{
+    padding: 20px;
+  }
+
+  form {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 5px;
+    width: 275px;
+    height: 35px;
+    margin: 4px 0 12px 0;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid #131313;
+    border-radius: 10px;
+  }
+
+  input[type="button"] {
+    margin: 10px 0 25px 0;
+    font-size: 15px;
+    width: 275px;
+    height: 32px;
+    color: rgb(39, 40, 40);
+    background-color: #959595;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  input[type="button:hover"] {
+    background-color: #554e4e;
+  }
+
+  .fs {
+    margin: 0 4px 0 16px;
+      font-size: 15px
+  }
+
+  .fs a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fs a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+<div class="header">
+  <h2>Вход в аккаунт</h2>
+</div>
+<div class="input-box">
+  <label for="name">Логин</label>
+  <input type="text" id="name" 
+  placeholder="Введите логин" required>
+  <label for="password">Пароль</label>
+  <input type="password" id="password" 
+  placeholder="Введите пароль" required>
+  <input type="button" value="Войти" onclick="window.location.href = '';">
+  <label><input type="checkbox" name="remember"> Запомнить меня <span class="fs"><a href="#">Забыли пароль?</a></span></label>
+</div>
+    </form>
+  </div>
+</body>
+</html>    
